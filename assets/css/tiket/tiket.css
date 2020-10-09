@@ -1,0 +1,10 @@
+.container-tiket{
+    width: 75%;
+    background-color: lightsteelblue;
+    margin: auto;
+    padding: 3%;
+}
+
+.container-tiket input,.container-tiket select,.container-tiket textarea{
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+.judul {
+    height: 1000px;
+    font-weight: 900;
+    opacity: 50%;
+}
+
+.container-task{
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+}
+
+.tiket{
+    border-radius: 10px;
+}
+
+.data-pelanggan, .belum-selesai, .sudah-selesai, .req-tugas{
+    margin-top: 5%;
+}
+.tambah_pelanggan{
+    float: left;
+}
+.search,.layanan,.status-pelanggan{
+    float: right;
+    margin: 1%;
+}

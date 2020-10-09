@@ -36,7 +36,7 @@ class Login extends CI_Controller
 		$email = $this->input->post('username'); //ambil value dari form
 		$password = $this->input->post('password'); //ambil value dari form
 		$user = $this->login_model->getuser($email); //ambil data user
-		$employ = $this->login_model->getemploy($user["employee_id"]); //ambil data employe
+		
 		$data["user"] = $user;
 		if ($user) { //jika data user ada
 			$saved_password = password_hash($user['user_password'], PASSWORD_DEFAULT);
@@ -45,15 +45,15 @@ class Login extends CI_Controller
 				//set session
 				$_SESSION["login"] = true;
 				$_SESSION["staff_user"] = $email;
-				$_SESSION["staff_id"] = $user["employee_id"];
+			
 				//akhir set session
 				
 				$this->session->set_flashdata('status-login', 'Berhasil');
 
-				if ($user["user_status"] == "C-Level") { //jika yang login C-Level
-					redirect(base_url('index.php/home/ceo/') . $email);
+				if ($user["login"] == "true") { //jika yang login C-Level
+					redirect(base_url('index.php/home/home/') . $email);
 				} else {
-					redirect(base_url('index.php/home/index/') . $email);
+					redirect(base_url('index.php/home/home/') . $email);
 				}
 			} else {
 				redirect(base_url());

@@ -31,7 +31,7 @@
         <div class="hero-static bg-white-95">
             <div class="content">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 col-xl-4">
+                    <div class="col-md-8 col-lg-6 col-xl-4 mt-8">
                         <!-- Sign In Block -->
                         <div class="block block-themed block-fx-shadow mb-0">
                                                       
@@ -40,7 +40,7 @@
                             <img class="img-fluid mt-3" src="<?php echo base_url('assets/img/logo.png')?> " alt="Gink Technology">
                             
                             
-                                <div class=" px-lg-4 py-lg-5 " >
+                                <div class=" px-lg-4 py-lg-2 " >
 
                                 
                                 <div id="page-loader" class="show"></div>
@@ -61,7 +61,7 @@
                                         </div>
 
                                         <div class="form-group row ">
-                                            <div class="container-fluid  ">
+                                            <div class="container-fluid mb-4">
                                                 <input type="submit" class="btn btn-block btn-primary mt-3 " value="Sign In"
                                                 onclick="One.loader('show');
                                             setTimeout(function () {
@@ -82,7 +82,7 @@
                         </div>
                         <!-- END Sign In Block -->
                         <div class="content content-full font-size-sm text-muted text-center">
-                <strong>ARM TEAM</strong> &copy; <span data-toggle="year-copy"></span>
+                <strong>SkyPoint</strong> &copy; <span data-toggle="year-copy"></span>
             </div>
                     </div>
                 </div>
